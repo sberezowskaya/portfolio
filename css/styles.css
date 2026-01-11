@@ -10,7 +10,7 @@ body {
     text-align: center;
     padding: 4rem;
     background-color: #B4B068;
-    color: white;
+    color: white; 
 }
 
 .logo {
@@ -43,11 +43,6 @@ h1 {
 
 nav a:hover{
     text-decoration: underline;
-}
-
-/* ОСНОВНОЙ КОНТЕНТ */
-.main {
-    margin: 5%;
 }
 
 /* Герой-секция (FLEXBOX) */
@@ -142,6 +137,7 @@ nav a:hover{
 .about-text p {
     margin-bottom: 1rem;
     font-size: 1rem;
+    padding-left: 5rem;
 }
 
 /* Контакты (форма) */
@@ -250,9 +246,4 @@ footer {
     
     .contact-form {
         padding: 3rem;
-    }
-}
-
-.layout {
-    display: grid;
-}
+    }}
