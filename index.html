@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Софьи Игумновой</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="layout">
+        <header></header>
+        <main></main>
+        <footer></footer>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="logo">🌸</div>
+        <h1>Софья Игумнова</h1>
+        <p class="subtitle">Начинающий фронтенд-разработчик</p>
+        
+        <nav class="nav">
+            <a href="#portfolio">Портфолио</a>
+            <a href="#about">Обо мне</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Герой-секция (flexbox) -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="img/logo.jpg" alt="Фото Софьи Игумновой">
+            </div>
+            <div class="hero-text">
+                <h2>Привет! Я Софья</h2>
+                <p>Студентка ТюмГУ, начинающий фронтенд-разработчик.</p>
+                <p>Верстаю на HTML и CSS. Учусь каждый день!</p>
+            </div>
+        </section>
+
+        <!-- Портфолио (grid - 6 карточек) -->
+        <section id="portfolio" class="portfolio">
+            <h2>Портфолио</h2>
+            <h3>EcoDelivery</h3>
+            <p>Сайт доставки здоровой еды</p>
+            <div class="portfolio-grid">
+                <div class="project-card1">
+                    <img src="img/project1.jpeg" alt="EcoDelivery. Фото 1">
+                </div>
+                <div class="project-card2">
+                    <img src="img/project2.jpeg" alt="EcoDelivery. Фото 2">
+                </div>
+                <div class="project-card3">
+                    <img src="img/project3.jpeg" alt="EcoDelivery. Фото 3">
+                </div>
+                <div class="project-card4">
+                    <img src="img/project4.jpeg" alt="EcoDelivery. Фото 4">
+                </div>
+                <div class="project-card5">
+                    <img src="img/project5.jpeg" alt="EcoDelivery. Фото 5">
+                </div>
+                <div class="project-card6">
+                    <img src="img/project6.jpeg" alt="EcoDelivery. Фото 6">
+                </div>
+            </div>
+        </section>
+
+        <!-- О себе -->
+        <section id="about" class="about">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Учусь на 3 курсе ТюмГУ.</p>
+                    <p>Хочу стать профессиональным фронтенд-разработчиком.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/work.jpg" alt="Софья в процессе работы">
+                </div>
+            </div>
+        </section>
+
+        <!-- Анкетка -->
+        <section id="contacts" class="contacts">
+            <h2>Связаться со мной</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+        <p>Свяжитесь со мной: <a href="mailto:hello@sofia.ru">hello@sofia.ru</a></p>
+    </footer>
+</body>
+</html>

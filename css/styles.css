@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 200%;
+    color: #494949;
+    background-color: white;
+}
+
+/* ШАПКА */
+.header {
+    text-align: center;
+    padding: 4rem;
+    background-color: #B4B068;
+    color: white;
+}
+
+.logo {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #C98086;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+.main {
+    margin: 5%;
+}
+
+/* Герой-секция (FLEXBOX) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.hero-image img {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    border: 5px dashed #B4B068;
+}
+
+.hero-text h2 {
+    color: #B4B068;
+    font-size: 1.5rem;
+}
+
+/* Портфолио (GRID) */
+
+.portfolio h2 {
+    text-align: center;
+    color: #C98086;
+    font-size: 2rem;
+}
+
+.portfolio h3 {
+    text-align: center;
+    gap: 0;
+}
+
+.portfolio p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 2fr;
+    grid-template-rows: 100px auto 1fr;
+}
+
+.project-card1 {
+    grid-column: 1 / -1;
+    height: 150px;
+} 
+
+.project-card2 { grid-column: 1; height: 250px; }
+.project-card3 { grid-column: 2; height: 250px; }
+.project-card4 { grid-column: 3; height: 250px; }
+.project-card5 { grid-column: 1; height: 250px; }
+.project-card6 { grid-column: 2; height: 250px; }
+
+.portfolio-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+/* О себе */
+.about {
+    margin-bottom: 3rem;
+}
+
+.about h2 {
+    text-align: center;
+    color: #C98086;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Контакты (форма) */
+.contacts {
+    margin-bottom: 3rem;
+}
+
+.contacts h2 {
+    text-align: center;
+    color: #B4B068;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #C98086;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #B4B068;
+    font-size: 1rem;
+}
+
+/* ФУТЕР */
+footer {
+    color: rgb(255, 52, 194);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* ПЛАНШЕТЫ (768px и больше) */
+@media (min-width: 768px) {
+    /* Шапка */
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .nav a {
+        font-size: 1.1rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    /* Герой-секция */
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        padding: 3rem;
+    }
+    
+    .hero-image,
+    .hero-text {
+        flex: 1;
+    }
+    
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+    
+    /* О себе */
+    .about-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .about-text,
+    .about-image {
+        flex: 1;
+    }
+}
+
+/* ДЕСКТОП (1024px и больше) */
+@media (min-width: 1024px) {
+    .main {
+        padding: 3rem 2rem;
+    }
+/*     
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    } */
+    
+    .hero {
+        padding: 4rem;
+    }
+    
+    .contact-form {
+        padding: 3rem;
+    }
+}
+
+.layout {
+    display: grid;
+}
